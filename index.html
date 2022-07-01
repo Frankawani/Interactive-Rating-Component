@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>ddgggg Interactive rating component</title>
+</head>
+
+<body>
+  <!-- Rating state start -->
+  <main>
+    <article class="card__rating">
+      <div class="card__container">
+        <div class="card__star-container">
+          <img src="images/icon-star.svg" class="star-icon" alt="star icon">
+        </div>
+        <h1 class="card__title">How did we do?</h1>
+        <div class="card__text">Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</div>
+        <div class="card__rates">
+          <button class="card__element-container">1</button>
+          <button class="card__element-container">2</button>
+          <button class="card__element-container">3</button>
+          <button class="card__element-container">4</button>
+          <button class="card__element-container">5</button>
+        </div>
+        <button class="card__submit" onclick="submitFunction()">SUBMIT</button>
+      </div>
+    </article>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <article class="card__thank">
+      <div class="card__container">
+        <img src="images/illustration-thank-you.svg" class="illustration"
+          alt="picture representing a credit card machine of some sort">
+        <div class="card__choice">You selected
+          <span class="card__result"></span> out of 5
+        </div>
+        <div class="card__title">Thank you!</div>
+        <div class="card__text">We appreciate you taking the time to give a rating. If you ever need more support,
+          don't hesitate to get in touch!</div>
+      </div>
+    </article>
+  </main>
+  <!-- Thank you state end -->
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Frank Awani</a>.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
